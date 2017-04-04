@@ -8,7 +8,7 @@ gem 'haml-rails'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'
-gem 'pg'
+gem 'sqlite3'
 
 group :development do
   gem 'thin'
@@ -31,4 +31,3 @@ end
 group :production do
   gem 'rails_12factor'
 end
-
