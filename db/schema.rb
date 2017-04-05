@@ -11,13 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170404145759) do
+ActiveRecord::Schema.define(version: 20170404161551) do
 
-  create_table "models", force: true do |t|
-    t.string   "title"
-    t.string   "small_cover_url"
-    t.string   "large_cover_url"
-    t.text     "description"
+  create_table "categories", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -29,6 +26,7 @@ ActiveRecord::Schema.define(version: 20170404145759) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "category_id"
   end
 
 end
